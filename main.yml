@@ -1,8 +1,5 @@
 - name: Configure {{SERVER}} Server
-  hosts: loaclhost
-  connection: local
-  vars_files:
-  - "variables-{{ENVIRONEMNT}}.yaml"
+  hosts: "{{SERVER}}"
   become: yes
   roles: 
   - "{{SERVER}}"
